@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <title>Diagram</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body class="background">
+        <div>
+            <button class="top-left" onclick="window.location.href = 'http://127.0.0.1:5000/'">Home</button>
+            <button class="top-right" onclick="window.location.href = 'http://127.0.0.1:5000/table'">Tabel</button>
+        </div>
+        <div class="center">
+            <div class="gallery" >
+                <img src="data:image/png;base64, {{ plotSpO2 }}" alt="">
+                <img src="data:image/png;base64, {{ plotTemp }}" alt="">
+                <img src="data:image/png;base64, {{ plotPuls }}" alt="">
+            </div>
+        </div>
+    </body>
+</html>

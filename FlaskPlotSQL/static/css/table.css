@@ -1,0 +1,64 @@
+.contentContainer {
+    margin: 0;
+    position: absolute;
+    top: 10%;
+    left: 28%;
+    height:650px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+
+    border-collapse: collapse;
+    font-size: 0.9em;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+}
+
+.content {
+
+    height: 100%;
+    width: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+    position: sticky;
+    top: 0;
+
+    background: linear-gradient(330deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%);
+    color: black;
+    text-align: right;
+    font-weight: bold;
+
+}
+
+.content tbody tr {
+    border-bottom: 1px solid #00cc99;
+}
+
+.content tbody tr:nth-of-type(even) {
+    background: linear-gradient(660deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%);
+}
+
+.content tbody tr:last-of-type {
+    border-bottom: 2px solid #6600ff;
+}
+
+.content tbody tr.r {
+    font-weight: bold;
+    color: black;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar {
+    background: #00cc99;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #6600ff;
+    border-radius: 50px;
+}

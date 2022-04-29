@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="utf-8">
+        <title>Health Box</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body class="background">
+        <h1>Health Box</h1>
+        <h2>Webclient</h2>
+        <div class="center">
+            <button class="button" onclick="window.location.href = 'http://127.0.0.1:5000/table'" >Tabelle</button>
+            <button class="button" onclick="window.location.href = 'http://127.0.0.1:5000/diagram'" >Plots</button>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/table.css') }}">
+
+</head>
+<body class="background-table">
+    <div>
+        <button class="top-left" onclick="window.location.href = 'http://127.0.0.1:5000/'">Home</button>
+        <button class="top-right" onclick="window.location.href = 'http://127.0.0.1:5000/diagram'">Diagram</button>
+    </div>
+    <div class="contentContainer">
+        <table class="content" border="1" cellpadding="5" cellspacing="5">
+            <tr>
+                <th>Time</th><th>Temperatur</th><th>Sauerstoffgehalt</th><th>Puls</th>
+            </tr>
+            {% for row in rows %}
+            <tr>
+            {% for d in row %}
+            <td>{{d}}</td>
+            {% endfor %}
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>
