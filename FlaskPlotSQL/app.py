@@ -78,7 +78,7 @@ def main():
 def table():
     cursor = mydb.cursor()
     # Fecthing Data From mysql to my python progame
-    cursor.execute("select s_time, s_temp, s_spO2, s_puls from testDB_table LIMIT 20")
+    cursor.execute("select s_time, s_temp, s_spO2, s_puls from testDB_table")
     rows = cursor.fetchall()
     return render_template("table.html", rows=rows)
 
